@@ -18,8 +18,7 @@ public class Humano {
 
     //Metodo de instancia: Puede acceder a variables estaticas y no esticas
     void otraCosa() {
-        Math x = new Math();
-        x.pow(10, 2);
+        Math.pow(10, 2);
 
         System.out.println(nombre);
         System.out.println(variableStatica);
