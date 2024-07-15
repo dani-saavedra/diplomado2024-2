@@ -7,9 +7,8 @@ public class Factura {
 
     //Puedo hacer inyeccion de depdencias, sin hacer inversion de depdencias
     //No puedo hacer inversion de dependencias, sin hacer inyeccion de dependencias.
-    public Factura(Notificacion notificacion, ReteICA reteICA) {
+    public Factura(Notificacion notificacion) {
         this.notificacion = notificacion;
-        this.reteICA = reteICA;
     }
 
     public void facturar(String cliente, int monto) {
