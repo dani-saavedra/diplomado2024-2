@@ -1,4 +1,4 @@
-package com.example.demo.patrones.creacionales;
+package com.example.demo.patrones.creacionales.factory;
 
 public class SillaModerna implements Silla {
     @Override

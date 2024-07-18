@@ -1,4 +1,4 @@
-package com.example.demo.patrones.creacionales;
+package com.example.demo.patrones.creacionales.factory;
 
 public class SofaVictoriano implements Sofa {
     @Override
