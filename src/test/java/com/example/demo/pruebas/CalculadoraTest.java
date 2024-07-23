@@ -18,7 +18,7 @@ class CalculadoraTest {
         //Preparación de la información necesaria: Arrange
         //Ejecutar el método que queremos: Act
         //VALIDAR EL RESULTADO: Assert
-        //Assert:  Assertions o un Verify
+        //Assert:  Assertions o un Verify (Mock)
         int resultado = calculadora.suma(2, 3);
         assertEquals(5, resultado);
         //Cuantas pruebas unitarias mínimo necesito de un método?
@@ -50,5 +50,13 @@ class CalculadoraTest {
         assertEquals(1000, saldoDespuesTransaccion);
         //Mutation test: (ESTO COSTOSO PARA LA CPU)
         //Mutation Test es solo la respuesta a malas pruebas, COVERAGE
+    }
+
+    @Test
+    void CuandoConsignacionValida_EntoncesTransfiera() {
+        int saldoDespuesTransaccion = calculadora.depositarDinero(500, 500);
+        assertEquals(0, saldoDespuesTransaccion);
+
+        //how to add report mutation test in sonar
     }
 }

@@ -18,10 +18,9 @@ public class Calculadora {
         if (dineroConsignar > dineroActual) {
             throw new ArithmeticException("Dinero insuficiente");
         }
-        if (dineroConsignar > LIMITE_PERMITIDO_DINERO_TRANSFERIR ) {
+        if (dineroConsignar > LIMITE_PERMITIDO_DINERO_TRANSFERIR) {
             throw new IllegalArgumentException("Supera el limite permitido de transaccion");
         }
-
         return dineroActual - dineroConsignar;
     }
 }
