@@ -1,0 +1,19 @@
+name: CI
+on:
+  push:
+    branches: [ 'main','master' ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el proyecto
+        uses: actions/checkout@v4
+      - name: Instalar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+      - name: Configurar Gradle
+        uses: gradle/gradle-build-action@v2
+      - name: Compilar el proyecto
+        run: ./gradlew build

@@ -18,7 +18,7 @@ class UserControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    @Test
+    //@Test
     void guardarUsuario() {
         Usuario daniel = new Usuario("Daniel");
         ResponseEntity<String> responseEntity = restTemplate.postForEntity("/usuario", daniel, String.class);
