@@ -13,7 +13,7 @@ public class Factura {
 
     public void facturar(String cliente, int monto) {
         System.out.println("Facturando..." + monto + " Cliente " + cliente);
-        reteICA.obtenerICA();
+        //reteICA.obtenerICA();
         notificacion.notificar(cliente);
     }
 
